@@ -1,0 +1,159 @@
+:root {
+  --room-background-color: #f7ebeb;
+  --room-light-off-color: rgba(220,220,220, .8);
+  --room-light-on-color: #FDE74C;
+  --room-name-color: #a1e7e5;
+  --room-temperature-color: #F28B88;
+  --main-gackgroud-color: #deeaea;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #6c7f8d;
+}
+
+.header-container {
+  padding: 20px;
+  margin: 20px;
+  height: 30px;
+  text-align: center;
+  background-color: var(--main-gackgroud-color);
+  width: 80vw;
+  min-width: 375px;
+  max-width: 1280px;
+  border-radius: 20px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-container {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: var(--main-gackgroud-color);
+  width: 80vw;
+  min-width: 375px;
+  max-width: 1280px;
+  min-height: 100vh;
+  border-radius: 20px;
+  display: flex;
+}
+
+.left-container {
+  width: 60%;
+}
+
+.right-container {
+  margin: 0 auto;
+}
+
+.house-header {
+  /*background-color: #6c7f8d;*/
+  margin: 10px;
+  text-align: center;
+}
+
+.house {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(auto-fill, minmax(100px, auto)); */
+  grid-gap: 20px;
+
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1400px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.room {
+  border: 2px solid rgba(108, 127, 141, 0.3);
+  height: 220px;
+  position: relative;
+  background-color: var(--room-background-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  @media screen and (min-width: 600px) {
+    height: 360px;
+  }
+
+  @media screen and (min-width: 800px) {
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 220px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 290px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 240px;
+  }
+
+  /* @media screen and (min-width: 1200px) {
+    height: 300px;
+  } */
+  /* @media screen and (min-width: 1400px) {
+    height: 300px;
+  } */
+}
+
+.room-name {
+  background-color: var(--room-name-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.room-temperature {
+  background-color: var(--room-temperature-color);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.room::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  /* background-color: yellow; */
+  background-color: var(--room-light-off-color);
+}
+
+.input-range {
+  margin-top: 20px;
+}
+
+.temperature {
+  margin-top: 20px;
+}
+
+.selected-value {
+  margin-bottom: 20px;
+}
+
+.selector {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sign {
+  cursor: pointer;
+}
