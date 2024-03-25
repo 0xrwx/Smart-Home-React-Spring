@@ -4,6 +4,9 @@ This is a remake of my previous "Smart Home App" with 3-tear architecture, where
 ## Main
 ![Alt Text](https://github.com/0xrwx/Smart-Home-React-Spring/blob/main/smart-home-demo-gifs/smart-home-demo-1.gif)
 
+## Responsive design
+![Alt Text](https://github.com/0xrwx/Smart-Home-React-Spring/blob/main/smart-home-demo-gifs/smart-home-demo-4.gif)
+
 ## Change user
 ![Alt Text](https://github.com/0xrwx/Smart-Home-React-Spring/blob/main/smart-home-demo-gifs/smart-home-demo-2.gif)
 
