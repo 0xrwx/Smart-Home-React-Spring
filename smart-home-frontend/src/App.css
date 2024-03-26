@@ -8,8 +8,8 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -28,7 +28,6 @@ body {
   max-width: 1280px;
   border-radius: 20px;
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 }
@@ -55,7 +54,6 @@ body {
 }
 
 .house-header {
-  /*background-color: #6c7f8d;*/
   margin: 10px;
   text-align: center;
 }
@@ -63,7 +61,6 @@ body {
 .house {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: repeat(auto-fill, minmax(100px, auto)); */
   grid-gap: 20px;
 
   @media screen and (min-width: 800px) {
@@ -102,13 +99,6 @@ body {
   @media screen and (min-width: 1400px) {
     height: 240px;
   }
-
-  /* @media screen and (min-width: 1200px) {
-    height: 300px;
-  } */
-  /* @media screen and (min-width: 1400px) {
-    height: 300px;
-  } */
 }
 
 .room-name {
@@ -133,7 +123,6 @@ body {
   width: 60%;
   height: 60%;
   border-radius: 50%;
-  /* background-color: yellow; */
   background-color: var(--room-light-off-color);
 }
 
@@ -156,4 +145,73 @@ body {
 
 .sign {
   cursor: pointer;
+}
+
+.modalAuthorizationContainer {
+  height: 500px;
+  width: 700px;
+  background-color: #F28B88;
+  border-radius: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalAuthorizationContainerInside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.registrationForm {
+  display: flex;
+  justify-items: center;
+}
+
+.closeButton {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.authFormInput {
+  margin: 10px;
+  width: 300px;
+  border: 0;
+  border-radius: 2px;
+}
+
+.authFormButton {
+  display: block;
+  width: 100px;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.formHeader {
+  align-self: center;
+}
+
+.formMessage {
+  color: white;
+  margin: 20px;
+  text-align: center;
+  height: 30px;
 }

@@ -133,4 +133,24 @@ public class MainController {
         roomsRepository.save(newRoom);
         return "Saved";
     }
+
+    @CrossOrigin
+    @PostMapping(path="/auth")
+    public User Login (@RequestBody @NotNull User requestedUser) {
+        Iterable<User> allUsers = userRepository.findAll();
+
+        User solidUser = new User();
+
+        for (User user : allUsers) {
+            if (
+                    user.getName().equals(requestedUser.getName()) &&
+                            user.getPassword().equals(requestedUser.getPassword())
+            ) {
+                requestedUser.setId(user.getId());
+                return requestedUser;
+            }
+        }
+
+        return solidUser;
+    }
 }

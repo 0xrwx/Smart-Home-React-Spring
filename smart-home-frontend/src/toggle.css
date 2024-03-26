@@ -44,10 +44,6 @@
 }
 
 .toggle-strong {
-    /* position: absolute;
-    left: 100%; */
     width: max-content;
     line-height: 30px;
-    /* margin-left: 10px; */
-    /* cursor: pointer; */
 }
