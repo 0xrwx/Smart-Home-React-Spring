@@ -7,5 +7,6 @@ This is a remake of my previous "Smart Home App" with 3-tear architecture, where
 To Do:
 - [x] Authorization (Log in)
 - [ ] Registration (Create accaunt)
+- [ ] Saving authorized user using cookie
 - [ ] Write documentation
 - [ ] Code refactoring
